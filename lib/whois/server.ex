@@ -11,7 +11,8 @@ defmodule Whois.Server do
     %{
       "com" => %Server{host: "whois.verisign-grs.com", prefix: "="},
       "net" => %Server{host: "whois.verisign-grs.com"},
-      "org" => %Server{host: "whois.pir.org"}
+      "org" => %Server{host: "whois.pir.org"},
+      "is"  => %Server{host: "whois.isnic.is"}
     }
   end
 
