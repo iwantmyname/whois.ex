@@ -15,7 +15,7 @@ defmodule Whois do
     end
   end
 
-  defp lookup_raw(domain, opts) do
+  def lookup_raw(domain, opts \\ []) do
     server = case Keyword.fetch(opts, :server) do
                {:ok, host} when is_binary(host) -> {:ok, %Server{host: host}}
                {:ok, %Server{} = server} -> {:ok, server}
